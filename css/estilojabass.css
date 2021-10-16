@@ -143,7 +143,7 @@ nav{
 }
 #fondo{
     min-height: 400px;
-    background-image: url('/img/fondo.jpg');
+    background-image: url('../img/fondo.jpg');
     background-size:cover;
     background-position-y: 50%;
     margin: 0;
