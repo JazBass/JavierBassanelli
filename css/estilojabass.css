@@ -1,0 +1,150 @@
+.subtitle{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #445;
+    text-indent: 2em;
+    font-size: 1.2em;
+}
+#barranav{
+    height: 4em;
+    top: -5em;
+    color: white;
+    margin-bottom: -5em;
+}
+.abajo{
+    background-color:#445;
+    width: 100%;
+    z-index: 10;
+    position: fixed;
+    top: 0 !important;
+    margin-bottom: 0 !important;
+}
+.logojabass{
+    font-family: 'Ephesis', cursive;
+    font-size: 3em;
+    color: #445;
+    font-weight: bold;
+    padding-top: 5%;
+}
+.logojabass2{
+    font-family: 'Ephesis', cursive;
+    font-size: 3em;
+    color: white;
+    font-weight: bold;
+    transition: 0.8s;
+}
+.jabadark {
+    background-color:#444; 
+    color: #ffffff;
+    width: 100%;
+    top:0px;
+    vertical-align: text-top;
+    padding: 3%;
+}
+.jabalight {
+    background-color: white;
+    color: #504747;
+    width: 100%;
+    top:0px;
+    vertical-align: text-top;
+    padding: 3%;
+}
+.midcentrado{
+    padding-top: 0;
+    vertical-align: middle;
+    line-height: normal;
+    margin: 2%;
+}
+#html{
+    font-size: 8em;
+    color: #EC6937;
+}
+#javascript{
+    font-size: 8em;
+    color: #FFD633;
+}
+#bootstrap{
+    font-size: 8em;
+    color: #8551E2;
+}
+#css{
+    font-size: 8em;
+    color: #376EE3;
+}
+#sql{
+    display: block;
+    margin: auto;
+    width: 8em;
+    height: 8em;
+}
+#java{
+    font-size: 8em;
+}
+#android{
+    font-size: 8em;
+}
+.tarjetas {
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    text-align: center;
+    background-color: #444; 
+    color: #ffffff;
+}
+.title{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.card-deck{
+    margin: 5% 0;
+}
+h2{
+    text-indent: 4em;
+}
+p.txtsobremi{
+    text-align: center;
+    font-size: large;
+    font-family: 'Scheherazade New', serif;
+    font-style: italic;
+}
+a{
+    color: white;
+}
+a:link {
+    color:inherit;
+    text-decoration: inherit;
+ }
+.wp:hover{
+    color: #25D366;
+}
+.fb:hover{
+    color: #3b5998;
+}
+.gmail:hover{
+    color: #6A0101;
+}
+.lkdin:hover{
+    color: #0073b1;
+}
+#contacto{
+    margin-bottom: 0;
+    height: 30%;
+}
+.fadeTop {
+  opacity: 0; 
+  transform: translate(0, 10vh);
+  transition: all 1s;
+}
+.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+nav{
+    background-color: white;
+    transition: 1.5s;
+    position: fixed;
+}
+#fondo{
+    min-height: 400px;
+    background-image: url('/img/fondo.jpg');
+    background-size:cover;
+    background-position-y: 50%;
+    margin: 0;
+}
