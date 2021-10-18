@@ -98,11 +98,12 @@
 h2{
     text-indent: 4em;
 }
-p.txtsobremi{
+.txtsobremi{
     text-align: center;
     font-size: large;
     font-family: 'Scheherazade New', serif;
     font-style: italic;
+    margin: 10%;
 }
 a{
     color: white;
