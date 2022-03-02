@@ -1,17 +1,18 @@
 body{
     margin-top: -10px;
 }
-.subtitle{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #445;
-    text-indent: 0.7em;
-    font-size: 1.2em;
+p{
+    font-family: 'Epilogue', sans-serif;
+    padding-top: 3%;
 }
 #barranav{
     height: 4em;
     top: -5em;
     color: white;
     margin-bottom: -5em;
+}
+h5{
+    font-size: medium;
 }
 .abajo{
     background-color:#445;
@@ -24,16 +25,16 @@ body{
 .logojabass{
     font-family: 'Ephesis', cursive;
     font-size: 3em;
-    color: #445;
-    font-weight: bold;
-    padding-top: 5%;
-}
-.logojabass2{
-    font-family: 'Ephesis', cursive;
-    font-size: 3em;
     color: white;
     font-weight: bold;
     transition: 0.8s;
+}
+.logojabass1{
+    font-family: 'Ephesis', cursive;
+    font-size: 3em;
+    color: black;
+    font-weight: bold;
+    padding-top: 15%;
 }
 .jabadark {
     background-color:#444; 
@@ -41,7 +42,10 @@ body{
     width: 100%;
     top:0px;
     vertical-align: text-top;
-    padding: 3%;
+    padding-top: 5%;
+    padding-left: 7%;
+    padding-right: 6%;
+    padding-bottom: 3%;
 }
 .jabalight {
     background-color: white;
@@ -58,29 +62,29 @@ body{
     margin: 2%;
 }
 #html{
-    font-size: 8em;
+    font-size: 6em;
     color: #EC6937;
 }
 #javascript{
-    font-size: 8em;
+    font-size: 6em;
     color: #FFD633;
 }
 #bootstrap{
-    font-size: 8em;
+    font-size: 6em;
     color: #8551E2;
 }
 #css{
-    font-size: 8em;
+    font-size: 6em;
     color: #376EE3;
 }
 #sql{
     display: block;
     margin: auto;
-    width: 8em;
-    height: 8em;
+    width: 6em;
+    height: 6em;
 }
 #java{
-    font-size: 8em;
+    font-size: 6em;
     color: #6e0101;
 }
 #android{
@@ -92,9 +96,12 @@ body{
     text-align: center;
     background-color: #444; 
     color: #ffffff;
+    padding-top: 3%;
 }
 .title{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Epilogue', sans-serif;
+    font-weight: bold;
+    padding-top: 2%;
 }
 .card-deck{
     margin: 5% 0;
@@ -102,19 +109,14 @@ body{
 h2{
     text-indent: 4em;
 }
-.txtsobremi{
-    text-align: center;
-    font-size: large;
-    font-family: 'Scheherazade New', serif;
-    font-style: italic;
-    margin: 10%;
-}
 a{
     color: white;
 }
 a:link {
     color:inherit;
     text-decoration: inherit;
+    text-decoration: underline;
+    font-weight: bold;
  }
 .wp:hover{
     color: #25D366;
@@ -128,14 +130,32 @@ a:link {
 .lkdin:hover{
     color: #0073b1;
 }
+.lkdin p{
+    font-weight:300 !important;
+}
+.fb p{
+    font-weight:300 !important;
+}
 #contacto{
+    margin-top: 0%;
+    padding-top: 1%;
     margin-bottom: 0;
     height: 30%;
 }
 .fadeTop {
-  opacity: 0; 
-  transform: translate(0, 10vh);
-  transition: all 1s;
+    opacity: 0; 
+    transform: translate(0, 10vh);
+    transition: all 1s;
+}
+.fadeLeft{
+    opacity: 0; 
+    transform: translate(-9vh,0);
+    transition: all 1s;
+}
+.fadeRight{
+    opacity: 0; 
+    transform: translate(9vh, 0);
+    transition: all 1s;
 }
 .visible {
     opacity: 1;
@@ -145,11 +165,47 @@ nav{
     background-color: white;
     transition: 1.5s;
     position: fixed;
+    text-decoration: none;
 }
 #fondo{
-    min-height: 400px;
-    background-image: url('../img/fondo.jpg');
+    min-height: 500px;
+    background-image: url('../img/Fondo1.png');
     background-size:cover;
-    background-position-y: 50%;
+    background-position-y: 45%;
     margin: 0;
+    padding-left: 2%;
+}
+.proyectos{
+    margin-top: 5%;
+}
+.imagen{
+    height: 90%;
+    width: 90%;
+    margin-top: 5%;
+}
+#sobremi{
+    padding-top: 3%;
+}
+.txtSobreMi{
+    text-align: justify;
+    font-size:large;
+    padding-right: 10%;
+    padding-left: 10%;
+    line-height: 150%;;
+}
+.imgProyecto{
+    border-radius: 2%;
+    width:95%; 
+    height: auto;
+}
+
+
+.ir-arriba {
+	display:none;
+    color: black;
+	cursor:pointer;
+	position: fixed;
+    z-index: 5;
+	bottom: 10%;
+	right:2%;
 }

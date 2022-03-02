@@ -5,56 +5,179 @@
     <title>JaBass</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap, css y JS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/estilojabass.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="js/jabass.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--Fuentes-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ephesis&family=Poppins&display=swap" rel="stylesheet">
-    <script src="js/jabass.js"></script>
     <link rel="shortcut icon" href="img/logo5-modified.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue&display=swap" rel="stylesheet">
+    <!--Iconos fa-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
 </head>
 
 <body>
     <!--Barra de Navegacion-->
     <nav id="barranav" class="navbar navbar-expand-sm">
-        <h1 class="logojabass2">Javier Bassanelli</h1>
+        <a class="nav-link" style="text-decoration: none;" href="#barranav">
+            <h1 class="logojabass">Javier Bassanelli</h1>
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#barranav"
             aria-controls="navbarTogglerDemo01" aria-expanded="false">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="#studies">Knowledge</a></li>
-                <li class="nav-item"><a class="nav-link" href="#sobremi">About me</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contacto">
-                        <i class="fas fa-location-arrow"></i> Contact</a>
+                <li class="nav-item"><a class="nav-link" style="text-decoration: none;" href="#studies">Proyectos</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" style="text-decoration: none;" href="#sobremi">Sobre mi</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" style="text-decoration: none;" href="#contacto">
+                        <i class="fas fa-location-arrow"></i> Contacto</a>
                 </li>
             </ul>
         </div>
     </nav>
-    <!--Presentacion-->
+
     <main role="main">
-        <div id="fondo">
-            <div class="containes-fluid midcentrado">
-                        <h1 class="logojabass">
-                            Javier Bassanelli
-                        </h1>
-                        <p class="subtitle">Mobile Applications Developer</p>
-                </div>
+        <!--Presentacion-->
+        <div id="fondo" class="containes-fluid midcentrado row">
+            <div class="col-7">
+                <h1 id="inicio" class="logojabass1">
+                    ¡Hola! Soy Javier, programador java.
+                </h1>
+            </div>
+            <div col-5>
+                <span class="ir-arriba"><i class="fas fa-angle-up fa-3x"></i></span>
             </div>
         </div>
-        <!--Habilidades-->
+
+        <!--Proyectos-->
         <div id="studies" class="jabadark">
             <div class="containes-fluid midcentrado">
                 <h1 class="title">
-                    Knowledge
+                    Proyectos
                 </h1>
             </div>
+            <!--AGENDA-->
+            <div class="containes row proyectos">
+                <div class="col-sm">
+                    <h3 class="title">Agenda</h3>
+                    <p>
+                        Proyecto realizado en JAVA con acceso a bases de datos MySQL y Access.
+                        Utilicé librerias como java.sql, java.io, jackcess para la conexión
+                        y las opercaciones con la base de datos.
+                    </p>
+                    <p>
+                        Link al repositorio github <a class="link" target="_blank"
+                            href="https://github.com/JazBass/Agenda.git">Agenda</a>
+                    </p>
+                    <h5>Lenguajes utilizados</h5>
+                    <div class="row fadeTop scroll-content">
+                        <div class="card tarjetas col">
+                            <i class="fab fa-java" id="java"></i>
+                            <h5>JAVA</h5>
+                        </div>
+                        <div class="card tarjetas col">
+                            <img src="img/SQLwhite.png" id="sql">
+                            <h5>SQL</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm fadeRight scroll-content">
+                    <img src="img/ProyectoAgenda.png" class="imgProyecto" alt="Agenda.java" />
+                </div>
+            </div>
+            <!--Bloc de Notas-->
+            <div class="containes row proyectos">
+                <div class="col-sm fadeLeft scroll-content">
+                    <img src="img/ProyectoBlocdeNotas.png" class="imgProyecto" alt="Fotobook" />
+                </div>
+                <div class="col-sm">
+                    <h3 class="title">Bloc de Notas</h3>
+                    <p>
+                        Bloc de Notas realizado con java, se puede crear o abrir archivos de texto, guardarlos y
+                        modificarlos.
+                        Cuenta ademas con la posibilidad de modificar el tipo, tamaño y color de la fuente.
+                        Librerías utilizadas java.IO y java.awt.
+                    </p>
+                    <p>
+                        Link al repositorio github <a class="link" target="_blank"
+                            href="https://github.com/JazBass/BlocDeNotas.git">Bloc de Notas</a>
+                    </p>
+                    <h5>Lenguaje utilizado</h5>
+                    <div class="row fadeTop scroll-content">
+                        <div class="card tarjetas col">
+                            <i class="fab fa-java" id="java"></i>
+                            <h5>JAVA</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Sockets-->
+            <div class="containes row proyectos">
+                <div class="col-sm">
+                    <h3 class="title">Sockets</h3>
+                    <p>
+                        Aplicación de comunicación cliente-servidor con sockets. Implementa un thread para el servidor y
+                        cuenta con las librerias java.net y java.IO.
+                    </p>
+                    <p>
+                        Link al repositorio github <a class="link" target="_blank"
+                            href="https://github.com/JazBass/BlocDeNotas.git">Sockets</a>
+                    </p>
+                    <h5>Lenguaje utilizado</h5>
+                    <div class="row fadeTop scroll-content">
+                        <div class="card tarjetas col">
+                            <i class="fab fa-java" id="java"></i>
+                            <h5>JAVA</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm fadeRight scroll-content">
+                    <img class="imgProyecto" src="img/ProyectoSockets.png" alt="Agenda.java" />
+                </div>
+            </div>
+            <!--FotoBook-->
+            <div class="containes row proyectos">
+                <div class="col-sm fadeLeft scroll-content">
+                    <img class="imgProyecto" src="img/ProyectoFotobook.jpeg" alt="Fotobook" />
+                </div>
+                <div class="col-sm">
+                    <h3 class="title">Fotobook</h3>
+                    <p>
+                        Red social para fotógrafos realizada durante mis estudios de front-end. Cuenta con una página
+                        principal,
+                        un login con acceso a un perfil y su casilla de mensajes, terminos y condiciones.
+                    </p>
+                    <p>
+                        Link al repositorio github <a class="link" target="_blank"
+                            href="https://github.com/JazBass/FotoBook.git">Fotobook</a>
+                    </p>
+                    <h5>Lenguajes utilizados</h5>
+                    <div class="row fadeTop scroll-content">
+                        <div class="card tarjetas col">
+                            <i class="fab fa-html5" id="html"></i>
+                            <h5>HTML5</h5>
+                        </div>
+                        <div class="card tarjetas col">
+                            <i class="fab fa-css3-alt" id="css"></i>
+                            <h5>CSS3</h5>
+                        </div>
+                        <div class="card tarjetas col">
+                            <i class="fab fa-bootstrap" id="bootstrap"></i>
+                            <h5>BOOTSTRAP</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--    
             <div class="card-deck fadeTop scroll-content">
                 <div class="card tarjetas">
                     <i class="fab fa-html5" id="html"></i>
@@ -83,47 +206,114 @@
                     <h3>SQL</h3>
                 </div>
             </div>
-        </div>
-        <!--Sobre MI-->
-        <div id="sobremi" class="jabalight">
-            <div class="containes-fluid midcentrado txtsobremi">
-                     <h3>About Me</h3>
-                     <p>
-                         I want to develop both professionally and personally 
-                         in a work environment in which teamwork and creativity 
-                         are valued as important tools for efficiency and the achievement of objectives. 
-                     </p>
+         </div>
+    -->
+            <!--Sobre MI-->
+            <div id="sobremi">
+                <div class="containes-fluid midcentrado">
+                    <h1 class="title">Sobre mi</h1>
+                    <p class="txtSobreMi">
+                        Siempre fui una persona apasionada por las ciencias exactas, especialmente las
+                        matemáticas,
+                        y
+                        por la tecnología. Cuando descubrí la programación me di cuenta que era para mí, poder
+                        utilizar
+                        la lógica como herramienta es un desafío que me motiva día a día a seguir aprendiendo.
+                    </p>
+                    <p class="txtSobreMi">
+                        La idea de comunicarse con un computador utilizando lenguajes de programación me parece
+                        asombrosa, pero
+                        la comunicación entre personas lo es también, por eso los idiomas resultan igual de
+                        importantes. Inglés, francés
+                        y español son los que domino haste el momento y me han permitido relacionarme sin barreras.
+
+                    </p>
+                    <p class="txtSobreMi">
+                        Motivación, compañerismo y responsabilidad es lo que puede esperar de mi.
+                        Si cree que puedría aportar valor a su equipo, no dude en contactarme.
+                    </p>
+                </div>
             </div>
-        </div>
-        <!--Contacto-->
-        <div id="contacto" class="jabadark">
-            <div class="containes-fluid midcentrado">
-                <h1 class="title">Contact</h1>
-                <div class="card-deck fadeTop scroll-content">
-                    <div class="wp card tarjetas">
-                        <i class="fab fa-whatsapp-square fa-4x"></i>
-                        <p>+34-632739357</p>
-                    </div>
-                    <div class="lkdin card tarjetas">
-                        <a href="https://www.linkedin.com/in/javierbassanelli">
-                            <i class="fab fa-linkedin fa-4x">
-                                <p style="font-size:25%; font-family: 'Poppins', sans-serif; margin-top: 6%;">Javier Bassanelli</p>
-                            </i>
-                        </a>
-                    </div>
-                    <div class="gmail card tarjetas">
-                        <i class="fas fa-envelope fa-4x"></i>
-                        <p>Javier.bassanelli@gmail.com</p>
-                    </div>
-                    <div class="fb card tarjetas">
-                        <a href="https://www.facebook.com/javier.bassanelli">
-                            <i class="fab fa-facebook-square fa-4x">
-                                <p style="font-size:25%; font-family: 'Poppins', sans-serif; margin-top: 6%;">Javier Bassanelli</p>
-                            </i></a>
+
+            <!--Contacto-->
+            <div id="contacto">
+                <div class="containes-fluid midcentrado">
+                    <h1 class="title">Contacto</h1>
+                    <div class="card-deck fadeTop scroll-content">
+                        <div class="wp card tarjetas">
+                            <i class="fab fa-whatsapp-square fa-4x"></i>
+                            <p>+34-632739357</p>
+                        </div>
+                        <div class="lkdin card tarjetas">
+                            <a href="https://www.linkedin.com/in/javierbassanelli" target="_blank">
+                                <i class="fab fa-linkedin fa-4x">
+                                    <p style="font-size:25%; margin-top: 6%;">Javier
+                                        Bassanelli</p>
+                                </i>
+                            </a>
+                        </div>
+                        <div class="gmail card tarjetas">
+                            <i class="fas fa-envelope fa-4x"></i>
+                            <p>Javier.bassanelli@gmail.com</p>
+                        </div>
+                        <div class="fb card tarjetas">
+                            <a href="https://www.facebook.com/javier.bassanelli" target="_blank">
+                                <i class="fab fa-facebook-square fa-4x">
+                                    <p style="font-size:25%; margin-top: 6%;">Javier
+                                        Bassanelli</p>
+                                </i></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
+    <!--Efecto Smooth Scroll-->
+    <script>
+        $(document).ready(function () {
+            // Smooth Scroll para los link
+            $("a").on('click', function (event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
+    <!--Efecto volver arriba-->
+    <script>
+        $(document).ready(function () {
+
+            $('.ir-arriba').click(function () {
+                $('body, html').animate({
+                    scrollTop: '0px'
+                }, 600);
+            });
+
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 0) {
+                    $('.ir-arriba').slideDown(300);
+                } else {
+                    $('.ir-arriba').slideUp(300);
+                }
+            });
+
+        });
+    </script>
 </body>
+
 </html>
