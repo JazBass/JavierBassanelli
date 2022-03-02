@@ -168,7 +168,7 @@ nav{
     text-decoration: none;
 }
 #fondo{
-    min-height: 500px;
+    height: 100vh;
     background-image: url('../img/Fondo1.png');
     background-size:cover;
     background-position-y: 45%;
