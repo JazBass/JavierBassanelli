@@ -1,5 +1,5 @@
-# Javier Bassanelli
+# Portfolio
 
-Portafolio web con mis proyectos realizados hasta el momento.
+My web-site
 
-Utiliza HTML, CSS, Bootstrap y JavaScript.
+Using HTML, CSS, Bootstrap and JavaScript.
